@@ -16,11 +16,11 @@ Na página de [releases](../../releases/latest):
 
 | arquivo | para | precisa |
 |---|---|---|
-| `lamina-rubra-1.0.1-windows-x64-setup.exe` | **Windows** (instalador) | nada (Java embutido) |
-| `lamina-rubra-1.0.1-x86_64.AppImage` | **Linux** (um arquivo só) | nada (Java embutido) |
-| `lamina-rubra-1.0.1.apk` | **Android** 7.0 ou mais novo | — |
-| `lamina-rubra-1.0.1.zip` | PC (Linux e Windows) | Java 21 ([adoptium.net](https://adoptium.net/)) |
-| `lamina-rubra-1.0.1-linux-x64.tar.gz` | Linux | nada (Java embutido) |
+| `lamina-rubra-1.0.2-windows-x64-setup.exe` | **Windows** (instalador) | nada (Java embutido) |
+| `lamina-rubra-1.0.2-x86_64.AppImage` | **Linux** (um arquivo só) | nada (Java embutido) |
+| `lamina-rubra-1.0.2.apk` | **Android** 7.0 ou mais novo | — |
+| `lamina-rubra-1.0.2.zip` | PC (Linux e Windows) | Java 21 ([adoptium.net](https://adoptium.net/)) |
+| `lamina-rubra-1.0.2-linux-x64.tar.gz` | Linux | nada (Java embutido) |
 
 O remaster completo (interface, fundos, som e o vídeo do prólogo) já vem nos pacotes; o jogo abre nele.
 
@@ -58,7 +58,8 @@ Controle (gamepad) também funciona: A pula, X ataca, B interage, LT bloqueia, R
 
 ## Android
 
-1. Instale o `.apk` (permita instalar de fontes desconhecidas, se o aparelho pedir). Se tiver a 1.0.0, desinstale-a antes.
+1. Instale o `.apk` (permita instalar de fontes desconhecidas, se o aparelho pedir). Se tiver a 1.0.0, desinstale-a antes; a 1.0.1
+   atualiza direto.
 2. Na primeira abertura, toque em **Escolher o arquivo .jar** e escolha o `.jar` do jogo. Ele é conferido (outra versão é avisada) e
    copiado para a pasta privada do app; das próximas vezes o jogo abre direto. Se o jogo não abrir com o arquivo escolhido, o app
    volta à tela de escolha mostrando o erro. Para trocar de `.jar`, limpe os dados do app nas configurações do Android.
@@ -67,9 +68,8 @@ Controle (gamepad) também funciona: A pula, X ataca, B interage, LT bloqueia, R
 4. Controles de toque: direcional à esquerda; **PULAR**, **ATACAR**, **AGIR** e **ARMA** à direita; **BLOQ.** e **ESQUIVA** acima deles;
    **EVOL.** e **PAUSA** no alto. O botão voltar do Android pausa e volta nos menus.
 
-Limitações desta versão: no Android, a música MIDI do modo clássico não toca (o Android não tem sintetizador MIDI); no Windows, o
-vídeo do prólogo ainda não toca (o jogo segue direto para o primeiro nível). Relatos de problema são bem-vindos nas
-[issues](../../issues).
+Limitação desta versão: no Android, a música MIDI do modo clássico não toca (o Android não tem sintetizador MIDI). Relatos de
+problema são bem-vindos nas [issues](../../issues).
 
 ## Aviso legal
 
