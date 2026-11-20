@@ -4,7 +4,8 @@ Motor novo, escrito do zero, para rodar o jogo J2ME *God of War: Betrayal* (Glu 
 originais do jogo que **você já tem**. Tem dois modos:
 
 - **Clássico**: 240×320, com o comportamento e a interface do celular.
-- **Remaster**: tela larga em 1080p, interface nova, movimentos novos (esquiva, corrida, contra-ataque) e modo difícil.
+- **Remaster**: tela larga em 1080p, interface nova, fundos novos, som novo, vídeo de prólogo, movimentos novos (esquiva, corrida,
+  contra-ataque) e modo difícil.
 
 > **O Lamina Rubra não traz o jogo.** Nenhum gráfico, som, texto ou mapa do jogo vem junto. Para jogar, você precisa do arquivo
 > `.jar` original do jogo (MIDlet versão 1.4.8). O motor lê esse arquivo na hora de jogar e não o envia para lugar nenhum.
@@ -15,22 +16,28 @@ Na página de [releases](../../releases/latest):
 
 | arquivo | para | precisa |
 |---|---|---|
-| `lamina-rubra-1.0.0.zip` | PC (Linux e Windows) | Java 21 ([adoptium.net](https://adoptium.net/)) |
-| `lamina-rubra-1.0.0-linux-x64.tar.gz` | Linux | nada (Java embutido) |
-| `lamina-rubra-1.0.0.apk` | Android 7.0 ou mais novo | — |
+| `lamina-rubra-1.0.1-windows-x64-setup.exe` | **Windows** (instalador) | nada (Java embutido) |
+| `lamina-rubra-1.0.1-x86_64.AppImage` | **Linux** (um arquivo só) | nada (Java embutido) |
+| `lamina-rubra-1.0.1.apk` | **Android** 7.0 ou mais novo | — |
+| `lamina-rubra-1.0.1.zip` | PC (Linux e Windows) | Java 21 ([adoptium.net](https://adoptium.net/)) |
+| `lamina-rubra-1.0.1-linux-x64.tar.gz` | Linux | nada (Java embutido) |
+
+O remaster completo (interface, fundos, som e o vídeo do prólogo) já vem nos pacotes; o jogo abre nele.
 
 ## PC
 
-1. Extraia o arquivo baixado.
-2. Rode, informando o `.jar` do jogo:
-   - Linux (zip): `bin/lamina-rubra /caminho/do/gow.jar`
-   - Linux (tar.gz com Java embutido): `lamina-rubra/bin/lamina-rubra /caminho/do/gow.jar`
-   - Windows: `bin\lamina-rubra.bat C:\caminho\do\gow.jar`
-3. Para não digitar o caminho toda vez, crie `~/.config/gow-motor/gow-motor.properties` (no Windows,
-   `C:\Users\<você>\.config\gow-motor\gow-motor.properties`) com a linha `jar=/caminho/do/gow.jar`. O arquivo
-   `gow-motor.properties.exemplo` do pacote mostra as outras opções.
+- **Windows**: rode o instalador `.exe` (não pede administrador; cria atalhos no Menu Iniciar e na área de trabalho).
+- **Linux**: marque o `.AppImage` como executável (`chmod +x` ou nas propriedades do arquivo) e abra com dois cliques.
 
-O save e a configuração ficam em `~/.config/gow-motor/`.
+Na primeira abertura, uma janela pede o `.jar` do jogo; ele é conferido (avisa se for de outra versão) e lembrado para as próximas
+vezes. O jogo abre no remaster, em tela cheia 1080p (F11 alterna com janela).
+
+Nos pacotes `.zip` e `.tar.gz`, o jogo abre por `bin/lamina-rubra` (Linux) ou `bin\lamina-rubra.bat` (Windows); o caminho do `.jar`
+também pode vir na linha de comando (`bin/lamina-rubra /caminho/do/gow.jar`) ou como `jar=/caminho/do/gow.jar` em
+`~/.config/gow-motor/gow-motor.properties` (no Windows, `C:\Users\<você>\.config\gow-motor\gow-motor.properties`). O arquivo
+`gow-motor.properties.exemplo` do pacote mostra as outras opções.
+
+O save, a configuração e os arquivos do remaster ficam em `~/.config/gow-motor/`.
 
 ### Controles no teclado (remaster)
 
@@ -51,14 +58,18 @@ Controle (gamepad) também funciona: A pula, X ataca, B interage, LT bloqueia, R
 
 ## Android
 
-1. Instale o `.apk` (permita instalar de fontes desconhecidas, se o aparelho pedir).
-2. Na primeira abertura, toque em **Escolher o arquivo .jar** e escolha o `.jar` do jogo. Ele é copiado para a pasta privada do app; das
-   próximas vezes o jogo abre direto. Para trocar de `.jar`, limpe os dados do app nas configurações do Android.
-3. Controles de toque: direcional à esquerda; **PULAR**, **ATACAR**, **AGIR** e **ARMA** à direita; **BLOQ.** e **ESQUIVA** acima deles;
+1. Instale o `.apk` (permita instalar de fontes desconhecidas, se o aparelho pedir). Se tiver a 1.0.0, desinstale-a antes.
+2. Na primeira abertura, toque em **Escolher o arquivo .jar** e escolha o `.jar` do jogo. Ele é conferido (outra versão é avisada) e
+   copiado para a pasta privada do app; das próximas vezes o jogo abre direto. Se o jogo não abrir com o arquivo escolhido, o app
+   volta à tela de escolha mostrando o erro. Para trocar de `.jar`, limpe os dados do app nas configurações do Android.
+3. Na primeira abertura o app também prepara os arquivos do remaster (alguns segundos). O vídeo do prólogo toca no reprodutor do
+   Android; um toque o pula.
+4. Controles de toque: direcional à esquerda; **PULAR**, **ATACAR**, **AGIR** e **ARMA** à direita; **BLOQ.** e **ESQUIVA** acima deles;
    **EVOL.** e **PAUSA** no alto. O botão voltar do Android pausa e volta nos menus.
 
-Limitações desta versão no Android: a música MIDI do original não toca (o Android não tem sintetizador MIDI) e o APK ainda não foi
-testado num aparelho de verdade. Relatos de problema são bem-vindos nas [issues](../../issues).
+Limitações desta versão: no Android, a música MIDI do modo clássico não toca (o Android não tem sintetizador MIDI); no Windows, o
+vídeo do prólogo ainda não toca (o jogo segue direto para o primeiro nível). Relatos de problema são bem-vindos nas
+[issues](../../issues).
 
 ## Aviso legal
 
