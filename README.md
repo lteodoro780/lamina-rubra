@@ -8,7 +8,7 @@ originais do jogo que **você já tem**. Tem dois modos:
   contra-ataque) e modo difícil.
 
 > **O Lamina Rubra não traz o jogo.** Nenhum gráfico, som, texto ou mapa do jogo vem junto. Para jogar, você precisa do arquivo
-> `.jar` original do jogo (MIDlet versão 1.4.8). O motor lê esse arquivo na hora de jogar e não o envia para lugar nenhum.
+> `.jar` original do jogo (MIDlet versão 1.4.20, do Sony Ericsson K800i, ou 1.4.8). O motor lê esse arquivo na hora de jogar e não o envia para lugar nenhum.
 
 ## Baixar
 
@@ -16,11 +16,11 @@ Na página de [releases](../../releases/latest):
 
 | arquivo | para | precisa |
 |---|---|---|
-| `lamina-rubra-1.0.2-windows-x64-setup.exe` | **Windows** (instalador) | nada (Java embutido) |
-| `lamina-rubra-1.0.2-x86_64.AppImage` | **Linux** (um arquivo só) | nada (Java embutido) |
-| `lamina-rubra-1.0.2.apk` | **Android** 7.0 ou mais novo | — |
-| `lamina-rubra-1.0.2.zip` | PC (Linux e Windows) | Java 21 ([adoptium.net](https://adoptium.net/)) |
-| `lamina-rubra-1.0.2-linux-x64.tar.gz` | Linux | nada (Java embutido) |
+| `lamina-rubra-1.0.3-windows-x64-setup.exe` | **Windows** (instalador) | nada (Java embutido) |
+| `lamina-rubra-1.0.3-x86_64.AppImage` | **Linux** (um arquivo só) | nada (Java embutido) |
+| `lamina-rubra-1.0.3.apk` | **Android** 7.0 ou mais novo | — |
+| `lamina-rubra-1.0.3.zip` | PC (Linux e Windows) | Java 21 ([adoptium.net](https://adoptium.net/)) |
+| `lamina-rubra-1.0.3-linux-x64.tar.gz` | Linux | nada (Java embutido) |
 
 O remaster completo (interface, fundos, som e o vídeo do prólogo) já vem nos pacotes; o jogo abre nele.
 
