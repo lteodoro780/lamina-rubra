@@ -16,11 +16,11 @@ Na página de [releases](../../releases/latest):
 
 | arquivo | para | precisa |
 |---|---|---|
-| `lamina-rubra-1.0.3-windows-x64-setup.exe` | **Windows** (instalador) | nada (Java embutido) |
-| `lamina-rubra-1.0.3-x86_64.AppImage` | **Linux** (um arquivo só) | nada (Java embutido) |
-| `lamina-rubra-1.0.3.apk` | **Android** 7.0 ou mais novo | — |
-| `lamina-rubra-1.0.3.zip` | PC (Linux e Windows) | Java 21 ([adoptium.net](https://adoptium.net/)) |
-| `lamina-rubra-1.0.3-linux-x64.tar.gz` | Linux | nada (Java embutido) |
+| `lamina-rubra-1.0.4-windows-x64-setup.exe` | **Windows** (instalador) | nada (Java embutido) |
+| `lamina-rubra-1.0.4-x86_64.AppImage` | **Linux** (um arquivo só) | nada (Java embutido) |
+| `lamina-rubra-1.0.4.apk` | **Android** 7.0 ou mais novo | — |
+| `lamina-rubra-1.0.4.zip` | PC (Linux e Windows) | Java 21 ([adoptium.net](https://adoptium.net/)) |
+| `lamina-rubra-1.0.4-linux-x64.tar.gz` | Linux | nada (Java embutido) |
 
 O remaster completo (interface, fundos, som e o vídeo do prólogo) já vem nos pacotes; o jogo abre nele.
 
