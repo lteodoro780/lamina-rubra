@@ -1,14 +1,47 @@
 # Lamina Rubra
 
 Motor novo, escrito do zero, para rodar o jogo J2ME *God of War: Betrayal* (Glu Mobile, 2007) no PC e no Android, com os arquivos
-originais do jogo que **você já tem**. Tem dois modos:
+originais do jogo que **você já tem**: um modo **clássico**, fiel ao celular, e um **remaster** em tela larga.
 
-- **Clássico**: 240×320, com o comportamento e a interface do celular.
-- **Remaster**: tela larga em 1080p, interface nova, fundos novos, som novo, vídeo de prólogo, movimentos novos (esquiva, corrida,
-  contra-ataque) e modo difícil.
+![O mesmo trecho do primeiro nível: à esquerda, o modo clássico (240×320, como no celular); à direita, o remaster em 1080p](imagens/comparacao.png)
 
 > **O Lamina Rubra não traz o jogo.** Nenhum gráfico, som, texto ou mapa do jogo vem junto. Para jogar, você precisa do arquivo
 > `.jar` original do jogo (MIDlet versão 1.4.20, do Sony Ericsson K800i, ou 1.4.8). O motor lê esse arquivo na hora de jogar e não o envia para lugar nenhum.
+
+## O que muda em relação ao jogo original
+
+O **modo clássico** é o jogo do celular como ele era: 240×320, a física, a inteligência dos inimigos, os chefes, os menus e as
+falas reconstruídos a partir do jogo original. O **remaster** usa a mesma lógica e muda a apresentação e o controle:
+
+| | no celular (2007) | no Lamina Rubra (remaster) |
+|---|---|---|
+| **Tela** | 240×320, retrato | 1080p em tela larga (16:9, 21:9, 16:10 ou 4:3), mostrando mais do nível nos lados, sem esticar |
+| **Fluidez** | 25 quadros por segundo | 60, 90, 120, 144, 165, 240 ou sem limite, com o movimento interpolado; VSync |
+| **Cenário** | céu liso e prédios do celular | fundos pintados com parallax (a cidade de Esparta, cidade em chamas e ruínas) |
+| **Interface** | barras do celular | HUD novo de bronze e mármore, menus e telas novos, caixa de fala com retrato de quem fala, câmera de cutscene nas falas |
+| **Controle** | teclado numérico | teclado e controle (gamepad), com botões próprios para pular, atacar, interagir, bloquear e esquivar; os ícones mostram o botão de verdade |
+| **Movimentos** | os do original | e mais: esquiva, corrida com fôlego, contra-ataque (bloquear no instante do golpe), golpe descendente e pulo de altura variável |
+| **Som** | três músicas MIDI | música, efeitos e vozes novos, com volume de música e de sons |
+| **Ajuda** | o texto do celular | página nova com os movimentos novos e dicas na primeira vez que cada um faz falta |
+| **Opções** | som e idioma | Opções também dentro da pausa (som, vídeo, jogo, controles), modo difícil, 6 idiomas |
+| **Abertura** | — | vídeo de prólogo |
+
+No modo clássico nada disso muda: é o jogo original, só que no PC ou no Android.
+
+## Imagens
+
+| | |
+|---|---|
+| ![O nível 1 com a cidade pintada ao fundo](imagens/remaster-nivel1.png) | ![O nível 5 com o fundo de cidade em chamas atrás das colunas](imagens/remaster-nivel5.png) |
+| Nível 1: a cidade pintada ao fundo | Nível 5: cidade em chamas atrás das colunas |
+| ![Uma fala com a câmera de cutscene e a caixa de bronze](imagens/remaster-dialogo.png) | ![O menu principal do remaster](imagens/remaster-menu.png) |
+| Falas com câmera de cutscene | Menu principal |
+| ![As Opções dentro da pausa](imagens/remaster-opcoes.png) | ![A página Novos movimentos da Ajuda](imagens/remaster-ajuda.png) |
+| Opções dentro da pausa | Ajuda: novos movimentos, com o botão de cada um |
+
+![O primeiro nível em 21:9](imagens/remaster-21x9.png)
+
+*Em 21:9, o nível se abre ainda mais para os lados.*
 
 ## Baixar
 
@@ -16,11 +49,11 @@ Na página de [releases](../../releases/latest):
 
 | arquivo | para | precisa |
 |---|---|---|
-| `lamina-rubra-1.0.4-windows-x64-setup.exe` | **Windows** (instalador) | nada (Java embutido) |
-| `lamina-rubra-1.0.4-x86_64.AppImage` | **Linux** (um arquivo só) | nada (Java embutido) |
-| `lamina-rubra-1.0.4.apk` | **Android** 7.0 ou mais novo | — |
-| `lamina-rubra-1.0.4.zip` | PC (Linux e Windows) | Java 21 ([adoptium.net](https://adoptium.net/)) |
-| `lamina-rubra-1.0.4-linux-x64.tar.gz` | Linux | nada (Java embutido) |
+| `lamina-rubra-1.0.9-windows-x64-setup.exe` | **Windows** (instalador) | nada (Java embutido) |
+| `lamina-rubra-1.0.9-x86_64.AppImage` | **Linux** (um arquivo só) | nada (Java embutido) |
+| `lamina-rubra-1.0.9.apk` | **Android** 7.0 ou mais novo | — |
+| `lamina-rubra-1.0.9.zip` | PC (Linux e Windows) | Java 21 ([adoptium.net](https://adoptium.net/)) |
+| `lamina-rubra-1.0.9-linux-x64.tar.gz` | Linux | nada (Java embutido) |
 
 O remaster completo (interface, fundos, som e o vídeo do prólogo) já vem nos pacotes; o jogo abre nele.
 
@@ -52,14 +85,14 @@ O save, a configuração e os arquivos do remaster ficam em `~/.config/gow-motor
 | trocar de arma | Q |
 | evolução | U |
 | pausa / voltar | Esc |
-| tela cheia | F11 |
+| tela cheia | F11 ou Alt+Enter |
 
 Controle (gamepad) também funciona: A pula, X ataca, B interage, LT bloqueia, RT esquiva, RB troca a arma, Start pausa.
 
 ## Android
 
-1. Instale o `.apk` (permita instalar de fontes desconhecidas, se o aparelho pedir). Se tiver a 1.0.0, desinstale-a antes; a 1.0.1
-   atualiza direto.
+1. Instale o `.apk` (permita instalar de fontes desconhecidas, se o aparelho pedir). Se tiver a 1.0.0, desinstale-a antes; as versões a partir da 1.0.1
+   atualizam direto.
 2. Na primeira abertura, toque em **Escolher o arquivo .jar** e escolha o `.jar` do jogo. Ele é conferido (outra versão é avisada) e
    copiado para a pasta privada do app; das próximas vezes o jogo abre direto. Se o jogo não abrir com o arquivo escolhido, o app
    volta à tela de escolha mostrando o erro. Para trocar de `.jar`, limpe os dados do app nas configurações do Android.
@@ -71,9 +104,14 @@ Controle (gamepad) também funciona: A pula, X ataca, B interage, LT bloqueia, R
 Limitação desta versão: no Android, a música MIDI do modo clássico não toca (o Android não tem sintetizador MIDI). Relatos de
 problema são bem-vindos nas [issues](../../issues).
 
+## Créditos
+
+Os fundos de cidade em chamas e de ruínas que vêm nos kits do remaster são arte do **Fenaky Lab**.
+
 ## Aviso legal
 
 Lamina Rubra é um projeto de fãs, sem fins lucrativos e sem nenhuma ligação com a Sony Interactive Entertainment, o Santa Monica Studio
 ou a Glu Mobile. *God of War* é marca dos seus donos; o nome aparece aqui só para dizer com qual jogo o motor é compatível. O motor foi
-escrito do zero e não contém código, gráficos, sons, textos nem mapas do jogo. Use somente uma cópia do jogo que você tenha obtido
+escrito do zero e não contém código, gráficos, sons, textos nem mapas do jogo. As imagens desta página mostram o motor rodando com
+uma cópia do jogo; os personagens e o cenário do jogo pertencem aos seus donos. Use somente uma cópia do jogo que você tenha obtido
 legalmente.
