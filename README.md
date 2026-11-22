@@ -49,11 +49,11 @@ Na página de [releases](../../releases/latest):
 
 | arquivo | para | precisa |
 |---|---|---|
-| `lamina-rubra-1.0.10-windows-x64-setup.exe` | **Windows** (instalador) | nada (Java embutido) |
-| `lamina-rubra-1.0.10-x86_64.AppImage` | **Linux** (um arquivo só) | nada (Java embutido) |
-| `lamina-rubra-1.0.10.apk` | **Android** 7.0 ou mais novo | — |
-| `lamina-rubra-1.0.10.zip` | PC (Linux e Windows) | Java 21 ([adoptium.net](https://adoptium.net/)) |
-| `lamina-rubra-1.0.10-linux-x64.tar.gz` | Linux | nada (Java embutido) |
+| `lamina-rubra-1.0.9-windows-x64-setup.exe` | **Windows** (instalador) | nada (Java embutido) |
+| `lamina-rubra-1.0.9-x86_64.AppImage` | **Linux** (um arquivo só) | nada (Java embutido) |
+| `lamina-rubra-1.0.9.apk` | **Android** 7.0 ou mais novo | — |
+| `lamina-rubra-1.0.9.zip` | PC (Linux e Windows) | Java 21 ([adoptium.net](https://adoptium.net/)) |
+| `lamina-rubra-1.0.9-linux-x64.tar.gz` | Linux | nada (Java embutido) |
 
 O remaster completo (interface, fundos, som e o vídeo do prólogo) já vem nos pacotes; o jogo abre nele.
 
@@ -98,11 +98,8 @@ Controle (gamepad) também funciona: A pula, X ataca, B interage, LT bloqueia, R
    volta à tela de escolha mostrando o erro. Para trocar de `.jar`, limpe os dados do app nas configurações do Android.
 3. Na primeira abertura o app também prepara os arquivos do remaster (alguns segundos). O vídeo do prólogo toca no reprodutor do
    Android; um toque o pula.
-4. Controles de toque em pixel art: o direcional à esquerda e, à direita, os botões com o ícone de cada ação (pular, atacar, agir, arma,
-   bloquear, esquiva; evolução e pausa no alto). O botão da ação pedida pisca (agir perto de um baú, pular embaixo de uma corda); nas falas,
-   um toque em qualquer lugar avança; nos menus, tocar num item o escolhe e tocar de novo confirma. Em **Opções → Controles** dá para mudar
-   o tamanho e a opacidade dos botões, ligar o modo canhoto, deixar o direcional flutuante e desligar a vibração. O botão voltar do Android
-   pausa e volta nos menus.
+4. Controles de toque: direcional à esquerda; **PULAR**, **ATACAR**, **AGIR** e **ARMA** à direita; **BLOQ.** e **ESQUIVA** acima deles;
+   **EVOL.** e **PAUSA** no alto. O botão voltar do Android pausa e volta nos menus.
 
 Limitação desta versão: no Android, a música MIDI do modo clássico não toca (o Android não tem sintetizador MIDI). Relatos de
 problema são bem-vindos nas [issues](../../issues).
