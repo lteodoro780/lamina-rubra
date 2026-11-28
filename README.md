@@ -19,12 +19,13 @@ falas reconstruídos a partir do jogo original. O **remaster** usa a mesma lógi
 | **Fluidez** | 25 quadros por segundo | 60, 90, 120, 144, 165, 240 ou sem limite, com o movimento interpolado; VSync |
 | **Cenário** | céu liso e prédios do celular | fundos pintados com parallax (a cidade de Esparta, cidade em chamas e ruínas) |
 | **Interface** | barras do celular | HUD novo de bronze e mármore, menus e telas novos, caixa de fala com retrato de quem fala, câmera de cutscene nas falas |
-| **Controle** | teclado numérico | teclado e controle (gamepad), com botões próprios para pular, atacar, interagir, bloquear e esquivar; os ícones mostram o botão de verdade |
+| **Controle** | teclado numérico | teclado e controle (gamepad), com botões próprios para pular, atacar, interagir, bloquear e esquivar; as teclas e os botões podem ser trocados no jogo, e os ícones mostram a tecla ou o botão de verdade |
 | **Movimentos** | os do original | e mais: esquiva, corrida com fôlego, contra-ataque (bloquear no instante do golpe), golpe descendente e pulo de altura variável |
 | **Som** | três músicas MIDI | música, efeitos e vozes novos, com volume de música e de sons |
 | **Ajuda** | o texto do celular | página nova com os movimentos novos e dicas na primeira vez que cada um faz falta |
 | **Opções** | som e idioma | Opções também dentro da pausa (som, vídeo, jogo, controles), modo difícil, 6 idiomas |
 | **Abertura** | — | vídeo de prólogo |
+| **Conquistas** | — | 26 conquistas (bronze, prata e ouro), com aviso ao desbloquear e uma tela própria no menu e na pausa |
 
 No modo clássico nada disso muda: é o jogo original, só que no PC ou no Android.
 
@@ -49,11 +50,11 @@ Na página de [releases](../../releases/latest):
 
 | arquivo | para | precisa |
 |---|---|---|
-| `lamina-rubra-1.0.14-windows-x64-setup.exe` | **Windows** (instalador) | nada (Java embutido) |
-| `lamina-rubra-1.0.14-x86_64.AppImage` | **Linux** (um arquivo só) | nada (Java embutido) |
-| `lamina-rubra-1.0.14.apk` | **Android** 7.0 ou mais novo | — |
-| `lamina-rubra-1.0.14.zip` | PC (Linux e Windows) | Java 21 ([adoptium.net](https://adoptium.net/)) |
-| `lamina-rubra-1.0.14-linux-x64.tar.gz` | Linux | nada (Java embutido) |
+| `lamina-rubra-1.0.15-windows-x64-setup.exe` | **Windows** (instalador) | nada (Java embutido) |
+| `lamina-rubra-1.0.15-x86_64.AppImage` | **Linux** (um arquivo só) | nada (Java embutido) |
+| `lamina-rubra-1.0.15.apk` | **Android** 7.0 ou mais novo | — |
+| `lamina-rubra-1.0.15.zip` | PC (Linux e Windows) | Java 21 ([adoptium.net](https://adoptium.net/)) |
+| `lamina-rubra-1.0.15-linux-x64.tar.gz` | Linux | nada (Java embutido) |
 
 O remaster completo (interface, fundos, som e o vídeo do prólogo) já vem nos pacotes; o jogo abre nele.
 
@@ -88,6 +89,9 @@ O save, a configuração e os arquivos do remaster ficam em `~/.config/gow-motor
 | tela cheia | F11 ou Alt+Enter |
 
 Controle (gamepad) também funciona: A pula, X ataca, B interage, LT bloqueia, RT esquiva, RB troca a arma, Start pausa.
+
+As teclas e os botões podem ser trocados em **Opções → Controles → Teclado** (ou **Comando**), também pela pausa: escolha a ação,
+aperte a tecla nova e pronto (Esc e F11 ficam fixos). "Repor predefinições" volta ao padrão.
 
 ## Android
 
